@@ -14,7 +14,10 @@ from _moderngl import (
 )
 from _moderngl import parse_spv_inputs as _parse_spv
 
-import mgl
+try:
+    from moderngl import mgl
+except ImportError:
+    try
 
 __version__ = "5.12.0"
 
