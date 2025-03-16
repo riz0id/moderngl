@@ -18,7 +18,7 @@ try:
     import mgl
     print("success: " + str(mgl))
 except ImportError:
-    print("failure: " + str(mgl))
+    print("fail: could not import mgl")
 
 __version__ = "5.12.0"
 
