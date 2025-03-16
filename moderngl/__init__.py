@@ -15,9 +15,10 @@ from _moderngl import (
 from _moderngl import parse_spv_inputs as _parse_spv
 
 try:
-    from moderngl import mgl
+    import mgl
+    print("success: " + str(mgl))
 except ImportError:
-    try
+    print("failure: " + str(mgl))
 
 __version__ = "5.12.0"
 
