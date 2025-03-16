@@ -14,10 +14,7 @@ from _moderngl import (
 )
 from _moderngl import parse_spv_inputs as _parse_spv
 
-try:
-    from moderngl import mgl
-except ImportError:
-    pass
+from moderngl import mgl
 
 __version__ = "5.12.0"
 
@@ -523,7 +520,7 @@ class Program:
 
     def draw_mesh_tasks_indirect(self, buffer, offset=0, drawcount=1, stride=0):
         return self.mglo.draw_mesh_tasks_indirect(buffer.mglo, offset, drawcount, stride)
-    
+
     def draw_mesh_tasks_indirect_count(self, buffer, offset, drawcount_offset, maxdrawcount, stride=0):
         return self.mglo.draw_mesh_tasks_indirect_count(buffer.mglo, offset, drawcount_offset, maxdrawcount, stride)
 
