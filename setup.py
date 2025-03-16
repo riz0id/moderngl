@@ -52,7 +52,7 @@ mgl = Extension(
     libraries=libraries[target],
     extra_compile_args=extra_compile_args[target],
     extra_link_args=extra_linker_args[target],
-    sources=["src/moderngl.cpp"],
+    sources=["src/mgl.cpp"],
 )
 
 short_description = "ModernGL: High performance rendering for Python 3"
